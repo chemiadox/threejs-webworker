@@ -1,8 +1,11 @@
+import { ThreeWorkerInterface } from '../interfaces/ThreeWorkerInterface';
+import { ThreeWorkerProxyInterface } from '../interfaces/ThreeWorkerProxyInterface';
+
 export class ThreeWorker implements ThreeWorkerInterface {
   constructor(private worker: Worker) {}
 
   // Takes the canvas element by its id and passes offscreen to the worker
-  registerCanvas(canvasId: string, options: { [key: string]: unknown } = null): void {
+  registerCanvas(canvasId: string): void {
     const htmlCanvas = <HTMLCanvasElement>document.getElementById(canvasId);
     const canvas = htmlCanvas.transferControlToOffscreen();
 
@@ -48,8 +51,8 @@ export class ThreeWorker implements ThreeWorkerInterface {
         }
 
         // ...otherwise try to pass params to call the function inside the web-worker
-        return function () {
-          target.callFunction(name, ...arguments);
+        return function (...params: []) {
+          target.callFunction(name, ...params);
         }
       }
     }) as unknown as ThreeWorkerProxyInterface;

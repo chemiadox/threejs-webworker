@@ -1,4 +1,4 @@
-import { PerspectiveCamera, Scene } from "three";
+import { PerspectiveCamera, Scene } from 'three';
 
 export interface PlaygroundInterface {
   getScene(): Scene;

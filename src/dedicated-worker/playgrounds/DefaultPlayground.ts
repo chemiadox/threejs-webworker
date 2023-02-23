@@ -5,7 +5,7 @@ import {
   Mesh,
   MeshBasicMaterial,
   RepeatWrapping,
-} from "three";
+} from 'three';
 
 import { PlaygroundInterface } from '../interfaces/PlaygroundInterface';
 import { Playground } from './Playground';

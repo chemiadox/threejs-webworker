@@ -1,9 +1,11 @@
-import { DefaultPlayground } from './DefaultPlayground';
-import { ModelPlayground } from './ModelPlayground';
 import { PlaygroundOptions } from '../types/PlaygroundOptions';
 import { Playground } from './Playground';
+import { DefaultPlayground } from './DefaultPlayground';
+import { ModelPlayground } from './ModelPlayground';
 
-export const playgroundMap: Map<string, Function> = new Map([
+type PlaygroundCreateFunction = (options: PlaygroundOptions) => Playground;
+
+export const playgroundMap: Map<string, PlaygroundCreateFunction> = new Map([
   [
     'canvas1',
     (options: PlaygroundOptions)  =>

@@ -1,6 +1,7 @@
+import { PerspectiveCamera, Scene } from 'three';
+
 import { PlaygroundInterface } from '../interfaces/PlaygroundInterface';
 import { PlaygroundOptions } from '../types/PlaygroundOptions';
-import { PerspectiveCamera, Scene } from 'three';
 
 export abstract class Playground implements PlaygroundInterface {
   protected scene: Scene;
@@ -24,5 +25,6 @@ export abstract class Playground implements PlaygroundInterface {
   }
 
   abstract animate(): Promise<void>;
+
   abstract init(): Promise<void>;
 }
