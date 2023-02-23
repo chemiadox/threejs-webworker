@@ -2,6 +2,7 @@
  * Application bootstrap
  */
 import { ThreeWorker } from './services/ThreeWorker';
+import { ThreeWorkerProxyInterface } from "./interfaces/ThreeWorkerProxyInterface";
 
 const worker: ThreeWorkerProxyInterface = ThreeWorker.create();
 
