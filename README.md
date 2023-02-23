@@ -14,7 +14,7 @@ npm install
 # build source for development
 npm run build:dev
 # or for production
-npm run build:prov
+npm run build:prod
 # start apache container for local access
 docker-compose up apache
 # or for detached mode
