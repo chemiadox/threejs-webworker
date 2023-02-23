@@ -1,0 +1,11 @@
+Model Information:
+* title:	Basical Snail
+* source:	https://sketchfab.com/3d-models/basical-snail-5b8d887ff3044119bf87ce9aa6e574b1
+* author:	LingthyManThatExists (https://sketchfab.com/testcrap)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Basical Snail" (https://sketchfab.com/3d-models/basical-snail-5b8d887ff3044119bf87ce9aa6e574b1) by LingthyManThatExists (https://sketchfab.com/testcrap) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
